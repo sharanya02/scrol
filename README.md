@@ -1,5 +1,6 @@
 <p align="center">
 	<img src="https://o.remove.bg/downloads/891a8754-6454-4dc7-aaba-559cb5713145/image-removebg-preview.png" alt="scrol"/>
+	![](https://o.remove.bg/downloads/b5dab064-c4d4-4517-8c8c-9a7c2654944d/image-removebg-preview__3_-removebg-preview.png)
 <p align="center">
     <a href="https://docs.google.com/document/d/1ayBpxThUl-LSiEbMRk6PO29Vkzs6JzKYBtJACg6FwJU/edit?usp=sharing"><strong>Explore the docs »</strong></a>
     <br />
