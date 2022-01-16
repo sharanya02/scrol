@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://o.remove.bg/downloads/6ec0d415-0f89-4f34-a196-a3e3fb55c38f/image-removebg-preview.png" alt="scrol"/>
+	<img src="https://o.remove.bg/downloads/891a8754-6454-4dc7-aaba-559cb5713145/image-removebg-preview.png" alt="scrol"/>
 <p align="center">
     <a href="https://docs.google.com/document/d/1ayBpxThUl-LSiEbMRk6PO29Vkzs6JzKYBtJACg6FwJU/edit?usp=sharing"><strong>Explore the docs »</strong></a>
     <br />
