@@ -72,3 +72,55 @@ def tinkerargs():
     mode = Val2.get()                   
     snstivty = Val4.get()/10  #fps/10       
     return cap_device, mode, snstivty
+
+
+def circle(image, x, y, roudness, color):
+    cv2.circle(image, (int(x), int(y)), roudness, color,
+               thickness=5, lineType=cv2.LINE_8, shift=0)
+
+
+def calculate_distance(l1, l2):
+    v = np.array([l1[0], l1[1]])-np.array([l2[0], l2[1]])
+    distance = np.linalg.norm(v)
+    return distance
+
+
+def calculate_moving_average(landmark, ran, LiT):   
+    while len(LiT) < ran:               
+        LiT.append(landmark)
+    LiT.append(landmark)                
+    if len(LiT) > ran:                  
+        LiT.pop(0)
+    return sum(LiT)/ran
+
+
+def main(cap_device, mode, snstivty):
+    dis = 0.7                           
+    preX, preY = 0, 0
+    nowCli, preCli = 0, 0               # previous left click state
+    norCli, prrCli = 0, 0               # prev right click state
+    douCli = 0                          # double click
+    i, k, h = 0, 0, 0
+    LiTx, LiTy, list0x, list0y, list1x, list1y, list4x, list4y, list6x, list6y, list8x, list8y, list12x, list12y = [
+    ], [], [], [], [], [], [], [], [], [], [], [], [], []   # moving average ka list
+    nowUgo = 1
+    cap_width = 1280
+    cap_height = 720
+    start, c_start = float('inf'), float('inf')
+    c_text = 0
+    # webcam input settings
+    window_name = 'Scrol'
+    cv2.namedWindow(window_name)
+    cap = cv2.VideoCapture(cap_device)
+    cfps = int(cap.get(cv2.CAP_PROP_FPS))
+    if cfps < 30:
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, cap_width)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, cap_height)
+        cfps = int(cap.get(cv2.CAP_PROP_FPS))
+    # smoothing amt
+    ran = max(int(cfps/10), 1)
+    hands = mp_hands.Hands(
+        min_detection_confidence=0.8,   # detection reliability 
+        min_tracking_confidence=0.8,    # tracking reilability
+        max_num_hands=1                 # max numb of detections
+    )
