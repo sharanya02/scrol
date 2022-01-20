@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://o.remove.bg/downloads/c0ee79df-f4c2-47e0-b1b5-cfddeb705ebe/image-removebg-preview__3_-removebg-preview.png" alt="scrol"/>
+	<img src="https://github.com/sharanya02/scrol/blob/main/media/logo.png?raw=true" alt="scrol"/>
 	<h2 align="center"> Gesture controlled virtual mouse built with mediapipe </h2>
 <p align="center">
     <a href=""><strong>Explore the docs »</strong></a>
@@ -18,6 +18,10 @@
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://docs.google.com/document/d/1ayBpxThUl-LSiEbMRk6PO29Vkzs6JzKYBtJACg6FwJU/edit?usp=sharing) 
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://www.figma.com/file/3SkFMId0IXsJMobMnReSO4/Engage?node-id=0%3A1)
 [![VIDEO ](https://img.shields.io/badge/Video-Link%20to%20Video-blue?style=flat-square&logo=appveyor)](https://drive.google.com/file/d/1RyYq6SSZkVtjWR0m3NgGykxNThPl4TbK/view?usp=sharing)
+
+
+https://user-images.githubusercontent.com/59661067/150365034-cb274f4d-504f-44b6-b830-3101ef4b97cb.mp4
+
 ## ⚙️ Installation
 - Run the following script to clone the repo
 ```bash
